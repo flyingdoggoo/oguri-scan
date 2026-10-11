@@ -95,5 +95,12 @@ Trước khi thực hiện lệnh `git commit` và `git push`, lập trình viê
 1. [ ] Đã chạy toàn bộ unit test và tất cả đều **PASSED**:
    - Backend: `pytest tests/`
    - Frontend: `npm run test` (hoặc `npm run build` không có lỗi TypeScript).
-2. [ ] Thông điệp commit tuân thủ đúng format `(type)(scope): message`.
+2. [ ] Thông điệp commit tuân thủ đúng format `<type>(<scope>): <nội dung>`.
 3. [ ] Không commit các tệp rác, file `.env`, tệp tạm hoặc build output vào git.
+
+---
+
+## 4. Quyền Tự Động Thực Thi (Auto-Proceed After Plan)
+
+- Khi AI Agent hoàn tất việc lập kế hoạch (`/plan`) hoặc nhận được sự đồng ý từ người dùng, Agent **được toàn quyền tự động chuyển sang bước thực thi (Proceed)** mà không cần dừng lại chờ thêm một lần xác nhận thủ công nếu không còn câu hỏi kỹ thuật chưa giải quyết.
+- Sau khi hoàn thành các thay đổi, Agent tự giác chạy kiểm thử và xác minh kết quả trước khi báo cáo hoàn tất.

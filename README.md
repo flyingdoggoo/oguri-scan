@@ -137,5 +137,24 @@ python local_server.py
 cd frontend
 npm install
 npm run dev
-# Giao diện chạy tại http://localhost:5173
+# Giao diện chạy tại http://localhost:5173 (có proxy tự động sang :8000)
 ```
+
+### 3. Chạy Toàn Bộ Bộ Kiểm Thử (Unit Tests)
+Dự án áp dụng quy chuẩn kiểm thử nghiêm ngặt trước khi commit:
+- **Backend Tests (pytest)**:
+  ```bash
+  python -m pytest backend/tests/ -v
+  # 11/11 tests passed (Circuit Breaker, Cookies, Headers, CORS, Injection, Secrets, Scoring)
+  ```
+- **Frontend Tests (vitest)**:
+  ```bash
+  cd frontend
+  npm run test
+  # 12/12 tests passed (LocalStorage History, Tailwind Utility, API Client)
+  ```
+- **Build Frontend**:
+  ```bash
+  npm run build
+  # Biên dịch TypeScript & Vite sang dist/ không có lỗi
+  ```

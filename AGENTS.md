@@ -119,3 +119,4 @@ Khi phát triển giao diện hoặc viết mã, Agent **BẮT BUỘC** tham chi
 - **Trao đổi bằng Tiếng Việt 100%**: Mọi tài liệu kỹ thuật, bình luận commit và giải thích cho người dùng đều viết bằng Tiếng Việt rõ ràng, mạch lạc.
 - **Kiểm tra trước khi sửa**: Luôn đọc file kỹ trước khi sửa; không tự ý xóa bỏ các phần quan trọng nếu chưa có sự thống nhất.
 - **Xác nhận qua Plan**: Trước khi sinh code thực thi, cập nhật và đồng bộ đầy đủ các tài liệu `PROJECT.md`, `DEPLOY.md`, `BRAINSTORMING.md`.
+- **Tự động Proceed sau khi Plan xong**: Khi đã có kế hoạch rõ ràng và không còn vướng mắc kỹ thuật, Agent được chủ động tiến hành thực thi mã nguồn (Proceed) theo kế hoạch mà không cần ngắt quãng chờ hỏi lại.
